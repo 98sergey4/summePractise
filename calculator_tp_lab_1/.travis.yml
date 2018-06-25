@@ -1,9 +1,9 @@
 language: csharp
-solution: ./calculator_tp_lab_1/calculator_tp_lab_1.sln
+solution: calculator_tp_lab_1.sln
  
 install:
   - sudo apt-get install nunit-console
-  - nuget restore ./calculator_tp_lab_1/calculator_tp_lab_1.sln
+  - nuget restore calculator_tp_lab_1.sln
 script:
   - xbuild calculator_tp_lab_1.sln
-  - nunit-console ./calculator_tp_lab_1/UnitTestProject1/bin/Release/UnitTestProject1.dll
+  - nunit-console ./UnitTestProject1/bin/Release/UnitTestProject1.dll
